@@ -168,6 +168,7 @@ namespace PR2
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(MSG_GAME_START);
 
+            Console.Clear();
             //Bucle de joc.
             while (started && trys > 0)
             {
@@ -300,6 +301,7 @@ namespace PR2
                     Console.ForegroundColor = ConsoleColor.DarkMagenta;
                     Console.WriteLine(MSG_REPITED, letter);
                 }
+                Console.Clear();
             }
 
 
