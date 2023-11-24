@@ -112,9 +112,7 @@ namespace PR2
             Console.Write(LINE_JUMP);
 
             //Entrada del text de l'usuari, on se separa per paraules i es guarda en un array de strings.
-            string user_input = Console.ReadLine();
-
-            user_input = user_input.ToUpper();
+            string user_input = Console.ReadLine().ToUpper();
 
             string[] posibles_words = user_input.Split(' ');
 
@@ -246,7 +244,7 @@ namespace PR2
                     if(c==letter) letter_repited = true;
                 }
 
-                
+                Console.Clear();
                 //En cas de no have estat adivinada procedeix a comprobar si hi és a la paraula o no.
                 if (!letter_repited) 
                 {
@@ -301,7 +299,7 @@ namespace PR2
                     Console.ForegroundColor = ConsoleColor.DarkMagenta;
                     Console.WriteLine(MSG_REPITED, letter);
                 }
-                Console.Clear();
+                
             }
 
 
